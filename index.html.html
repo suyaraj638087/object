@@ -1,0 +1,122 @@
+<!DOCTTYPE html>
+<html>
+<head>
+	<title>task-4</title>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+			 
+</head>
+<body>
+      <script>
+ 
+const users =[
+   { first_name: 'suya',
+    last_name: 'raj'
+  },
+  {
+    first_name: 'roman',
+    last_name: 'reigns'
+  },
+  {
+    first_name: 'John',
+    last_name: 'Chena'
+  }
+];
+
+// output =  ['suya raj', 'roman reigns', 'John Chena']
+
+const fullName = users.map(function(val){
+     return `${val.first_name} ${val.last_name}`;
+	 });
+	 
+	 console.log(fullName);
+	 
+	 //2
+	 
+	const name = [
+  {
+    first_name: 'Mike',
+    last_name: 'Sheridan',
+    age: 30
+  },
+  {
+    first_name: 'Tim',
+    last_name: 'Lee',
+    age: 45
+  },
+  {
+    first_name: 'John',
+    last_name: 'Carte',
+    age: 25
+  }
+];
+
+// output = ['Sheridan', 'Lee', 'Carte']
+
+const lastname = users.map(function(val){
+      return val.last_name;
+	 });
+	 
+	console.log(lastname);
+	
+	//3
+	
+	const person = [
+  {
+    first_name: 'Mike',
+    location: 'London'
+  },
+  {
+    first_name: 'Tim',
+    location: 'US'
+  },
+  {
+    first_name: 'John',
+    location: 'Australia'
+  }
+];
+
+   
+let result = users.map(function(val){
+    return `${val.first_name} lives ${val.location}`;
+
+   });
+   
+ console.log(result);
+ 
+ //4
+ 
+ 
+	const details= [
+     {
+	     first_name: 'Mike',
+		 last_name: 'Sheridan'
+	 },
+	 {
+	     first_name: 'Tim',
+		 last_name: 'Lee'
+	 },
+	 {
+	     first_name: 'John',
+		 last_name: 'Carte'
+	 }
+];
+ 
+const numbers = [1,2,3,4,5];
+
+let value= numbers.reduce(function(v1, v2, v3){
+    
+	 return v1*v2
+	  
+	  })
+	  let results=value/3
+	  console.log(results);
+	
+	
+	
+
+	    
+	  
+	  </script>
+</body>
+</html>
